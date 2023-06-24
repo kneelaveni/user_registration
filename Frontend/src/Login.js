@@ -39,12 +39,12 @@ function Login() {
             <form action=''onSubmit={handleSubmit}>
                 <div className='mb-3'>
                     <label htmlFor='email'><strong>Email</strong></label>
-                    <input required onChange={handleInput} type='email' name='email' placeholder='Enter Email'className='form-control rounded-0'/>
+                    <input  onChange={handleInput} type='email' name='email' placeholder='Enter Email'className='form-control rounded-0'/>
                     {errors.email && <span className='text-danger'>{errors.email}</span>}
                 </div>
                 <div className='mb-3'>
                     <label htmlFor='password'><strong>Password</strong></label>
-                    <input required onChange={handleInput} type='password' name='password' placeholder='Enter Password'className='form-control rounded-0'/>
+                    <input onChange={handleInput} type='password' name='password' placeholder='Enter Password'className='form-control rounded-0'/>
                     {errors.password && <span className='text-danger'>{errors.password}</span>}
 
                 </div>
